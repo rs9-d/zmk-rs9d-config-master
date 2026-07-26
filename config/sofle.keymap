@@ -75,7 +75,7 @@
 &tildesc    &kp N1  &kp N2    &kp N3    &kp N4     &kp N5                           &kp N6  &kp N7     &kp N8     &kp N9    &kp N0         &kp DELETE
 &kp TAB     &kp Q   &kp W     &kp E     &kp R      &kp T                            &kp Y   &kp U      &kp I      &kp O     &kp P          &kp BSPC
 &kp CAPS    &kp A   &kp S     &kp D     &kp F      &kp G                            &kp H   &kp J      &kp K      &kp L     &kp SEMICOLON  &kp SQT
-&kp LSHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &none      &none      &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
+&kp LSHIFT  &kp Z   &kp X     &kp C     &kp V      &kp B      &tog 4     &none      &kp N   &kp M      &kp COMMA  &kp DOT   &kp FSLH       &kp RSHFT
                     &kp LGUI  &kp LALT  &kp LCTRL  &lyr_pick  &kp RET    &kp SPACE  &none   &kp RCTRL  &kp RALT   &kp RGUI
             >;
 
@@ -123,11 +123,11 @@
 
         gaming {
             bindings = <
-&kp ESCAPE  &kp NUMBER_1  &kp NUMBER_2        &kp NUMBER_3  &kp NUMBER_4  &kp N5                          &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0    &trans
-&kp TAB     &kp Q         &kp W               &kp E         &kp R         &kp T                           &kp Y         &kp U   &kp I      &kp O    &kp P     &trans
-&kp CAPS    &kp A         &kp S               &kp D         &kp F         &kp G                           &kp H         &kp J   &kp K      &kp L    &kp SEMI  &trans
-&kp LSHFT   &kp Z         &kp X               &kp C         &kp V         &kp B         &trans    &trans  &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-                          &mt TILDE LEFT_WIN  &kp LCTRL     &kp SPACE     &kp LEFT_ALT  &to 0     &trans  &none         &trans  &trans     &trans
+&tildesc   &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp N5                          &kp NUMBER_6  &kp N7  &kp N8     &kp N9   &kp N0    &trans
+&kp TAB    &kp Q         &kp W         &kp E         &kp R         &kp T                           &kp Y         &kp U   &kp I      &kp O    &kp P     &trans
+&kp CAPS   &kp A         &kp S         &kp D         &kp F         &kp G                           &kp H         &kp J   &kp K      &kp L    &kp SEMI  &trans
+&kp LSHFT  &kp Z         &kp X         &kp C         &kp V         &kp B         &trans    &trans  &kp N         &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
+                         &kp LEFT_WIN  &kp LCTRL     &kp SPACE     &kp LEFT_ALT  &trans    &trans  &none         &trans  &trans     &trans
             >;
 
             label = "gaming";
