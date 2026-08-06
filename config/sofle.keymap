@@ -12,8 +12,6 @@
 #define RAISE 2
 #define ADJUST 3
 
-&mt { hold-trigger-on-release; };
-
 / {
     // Activate ADJUST layer by pressing raise and lower
 
@@ -31,7 +29,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "PASTE";
             #binding-cells = <0>;
-            bindings = <&mt K_PASTE V>, <&kp LC(LA(LS(V)))>;
+            bindings = <&mt LC(V) V>, <&kp LC(LA(LS(V)))>;
         };
 
         lyr_pick: lyr_pick {
@@ -79,11 +77,11 @@
 
         design {
             bindings = <
-&trans                                       &kp LA(KP_N1)        &kp LA(KP_N2)     &kp LA(KP_N3)  &kp LA(KP_N4)  &kp LA(KP_N5)                       &kp LA(KP_N6)  &kp LA(KP_N7)  &kp LA(KP_N8)  &kp LA(KP_N9)  &kp LA(KP_N0)  &trans
-&kp ESCAPE                                   &mt LS(LC(G)) LC(G)  &kp I             &mt LC(S) W    &mt P T        &kp BACKSPACE                       &trans         &trans         &trans         &trans         &trans         &trans
-&mt LC(LS(RIGHT_BRACKET)) LC(RIGHT_BRACKET)  &kp LEFT_SHIFT       &kp LEFT_CONTROL  &kp LEFT_ALT   &kp SPACE      &mt LC(A) A                         &trans         &trans         &trans         &trans         &trans         &trans
-&mt LS(LC(LEFT_BRACKET)) LC(LEFT_BRACKET)    &kp Z                &mt K_CUT X       &mt K_COPY C   &paste         &trans         &trans       &trans  &trans         &trans         &trans         &trans         &trans         &trans
-                                                                  &trans            &trans         &mo 3          &to 0          &kp ENTER    &trans  &trans         &trans         &trans         &trans
+&trans                                       &kp LA(LS(KP_N1))    &kp LA(LS(KP_N2))  &kp LA(LS(KP_N3))  &kp LA(LS(KP_N4))  &kp LA(LS(KP_N5))                       &kp LA(LS(KP_N6))  &kp LA(LS(KP_N7))  &kp LA(LS(KP_N8))  &kp LA(LS(KP_N9))  &kp LA(LS(KP_N0))  &trans
+&kp ESCAPE                                   &mt LS(LC(G)) LC(G)  &kp I              &mt LC(S) W        &mt P T            &kp BACKSPACE                           &trans             &trans             &trans             &trans             &trans             &trans
+&mt LC(LS(RIGHT_BRACKET)) LC(RIGHT_BRACKET)  &kp LEFT_SHIFT       &kp LEFT_CONTROL   &kp LEFT_ALT       &kp SPACE          &mt LC(A) A                             &trans             &trans             &trans             &trans             &trans             &trans
+&mt LS(LC(LEFT_BRACKET)) LC(LEFT_BRACKET)    &kp Z                &mt LC(X) X        &mt LC(C) C        &paste             &trans             &trans       &trans  &trans             &trans             &trans             &trans             &trans             &trans
+                                                                  &trans             &trans             &mo 3              &to 0              &kp ENTER    &trans  &trans             &trans             &trans             &trans
             >;
 
             sensor-bindings = <&inc_dec_kp LC(Z) LC(LS(Z))>;
